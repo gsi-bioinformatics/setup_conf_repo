@@ -1,7 +1,7 @@
 sudo apt-get update 
-sudo apt-get install ca-certificates curl 
-sudo apt install openjdk-17-jre-headless 
-sudo apt install docker.io 
+sudo apt-get install ca-certificates curl  -y 
+sudo apt install openjdk-17-jre-headless -y
+sudo apt install docker.io -y
 sudo usermod -a -G docker $USER 
 curl -s https://get.nextflow.io | bash 
 chmod +x nextflow 

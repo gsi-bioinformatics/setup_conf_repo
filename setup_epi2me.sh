@@ -8,5 +8,15 @@ chmod +x nextflow
 sudo mv nextflow /usr/local/bin 
 
 wget https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/installers/epi2me_5.1.14_amd64.deb
-sudo apt install epi2me_5.1.14_amd64.deb
+sudo dpkg -i epi2me_5.1.14_amd64.deb
+
+mkdir ~/Data
+
+sudo apt install unzip
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws configure
+
+
 sudo reboot
